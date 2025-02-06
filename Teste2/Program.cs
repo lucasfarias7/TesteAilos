@@ -1,5 +1,4 @@
-﻿using System.ComponentModel;
-using Teste2.Client;
+﻿using Teste2.Client;
 
 class Program
 {
