@@ -1,4 +1,5 @@
-﻿using Teste2.Client;
+﻿using System.ComponentModel;
+using Teste2.Client;
 
 class Program
 {
@@ -19,8 +20,8 @@ class Program
     
     async static Task<int> getTotalScoredGoals(string team, int year)
     {
-        string TreaterSpacesTeam = Uri.EscapeDataString(team);
-        string Url = $"https://jsonmock.hackerrank.com/api/football_matches?year={year}&team1={team}";
+        string treatwhitespace = Uri.EscapeDataString(team);
+        string Url = $"https://jsonmock.hackerrank.com/api/football_matches?year={year}&team1={treatwhitespace}";
 
         var client = new HackerRanClient(Url);
 
